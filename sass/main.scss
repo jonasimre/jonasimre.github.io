@@ -1,0 +1,212 @@
+/*@media max-width: 600px {
+pre.highlight {
+width: 90vw;
+}
+}*/
+
+:root {
+  --main-bg-color: #fffceb;
+  --section-color: #fcf2d9;
+  --text-color: #000;
+  --link-color: #eaa048;
+  --link-hover-color: #eaca48;
+}
+
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+body.dark-mode {
+  background: #222;
+  color: #fcf2d9;
+}
+
+.container {
+  font-family: helvetica, arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+main {
+  order: 3;
+  flex: 1 1 600px;
+  width: 90%;
+}
+
+nav {
+  align-items: center;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0 0.5em 0;
+  position: sticky;
+  text-align: center;
+  top: 0;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+nav li {
+  color: black;
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.2em;
+}
+
+nav #toggle-mode {
+  color: var(--link-color);
+  cursor: pointer;
+  margin-left: 0.5em;
+}
+
+#toggle-lang img {
+  width: 2em;
+}
+
+aside {
+  order: 4;
+  flex: 1 0 150px;
+  padding: 1em;
+}
+
+footer {
+  flex: 1 0 100%;
+  order: 5;
+  text-align: center;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.author {
+  margin-top: -75px;
+  text-align: center;
+}
+
+.author-photo {
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background: var(--main-bg-color);
+  width: 150px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  /* font-y: 'Lora', serif; */
+  padding: 0.5em 0 0.3em 0;
+  border-bottom: 1px solid gray;
+}
+
+p,
+li {
+  font-family: "Nunito", sans-serif;
+}
+
+.feature {
+  /* background-image: url("/images/house-solar-cell.jpg");
+  background-size: cover;
+  background-position: center; */
+  height: 300px;
+}
+
+.feature-title-box {
+  display: flex;
+  justify-content: center;
+}
+
+.feature .blog-title {
+  color: white;
+  padding: 0 20px;
+  background-color: rgba(32, 32, 32, 0.5);
+  font:
+    normal 500 2.5em "Rock Salt",
+    cursive;
+  line-height: 150%;
+  text-align: center;
+}
+
+.social {
+  margin: 0 16px 0 16px;
+  width: 32px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+body.dark-mode a {
+  color: #eeb21b;
+}
+
+body.dark-mode a:hover {
+  color: #f5d27a;
+}
+
+.post-title {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+}
+
+.post-date {
+  font-size: 0.8em;
+  margin-top: -1em;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+p {
+  line-height: 1.4em;
+}
