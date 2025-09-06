@@ -94,10 +94,11 @@ aside {
 footer {
   flex: 1 0 100%;
   order: 5;
-  text-align: center;
   border-top: 1px solid gray;
+  font-size: 0.9em;
   margin-top: 20px;
   padding-top: 10px;
+  text-align: center;
 }
 
 .author {
@@ -150,8 +151,8 @@ li {
 }
 
 .social {
-  margin: 0 16px 0 16px;
-  width: 32px;
+  margin: 0 4px 0 4px;
+  width: 24px;
 }
 
 a {
